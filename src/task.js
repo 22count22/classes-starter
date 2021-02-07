@@ -49,7 +49,6 @@ export class Task {
         this.newTask.text = event.target.value;
 
         this.tasks.push(this.newTask);
-        debugger;
         const liEl = this.render();
         document.querySelector('#task-root').firstElementChild.appendChild(liEl);
         event.target.value = '';
